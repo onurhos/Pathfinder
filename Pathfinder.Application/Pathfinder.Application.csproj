@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pathfinder.Commands\Pathfinder.Commands.csproj" />
+    <ProjectReference Include="..\PathFinder.Queries\PathFinder.Queries.csproj" />
+    <ProjectReference Include="..\Pathfinder.ReadModel.InMemory\Pathfinder.ReadModel.InMemory.csproj" />
+  </ItemGroup>
+
+</Project>

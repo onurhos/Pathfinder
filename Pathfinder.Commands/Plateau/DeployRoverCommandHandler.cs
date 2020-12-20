@@ -1,0 +1,21 @@
+using System.Threading;
+using System.Threading.Tasks;
+using EventFlow.Aggregates.ExecutionResults;
+using EventFlow.Commands;
+using Pathfinder.Domain.Aggregates.Plateau;
+
+namespace Pathfinder.Commands.Plateau
+{
+    public class DeployRoverCommandHandler : CommandHandler<Domain.Aggregates.Plateau.Plateau, PlateauId, IExecutionResult, DeployRoverCommand>
+    {
+        public override async Task<IExecutionResult> ExecuteCommandAsync
+        (
+            Domain.Aggregates.Plateau.Plateau aggregate,
+            DeployRoverCommand command,
+            CancellationToken cancellationToken
+        )
+        {
+            return await aggregate.DeployRover(command.Rover);
+        }
+    }
+}
