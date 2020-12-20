@@ -1,6 +1,6 @@
 # Pathfinder
 
-A mars rover motion simulation made with ddd, cqrs and eventsourcing techniques.
+A mars rover simulation made with DDD, cqrs, and event-sourcing techniques.
 
 ## Libraries Used
 
