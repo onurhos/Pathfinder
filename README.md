@@ -51,14 +51,14 @@ MMRMMRMRRM
 
 ## CLI
 
+### Test run
+```
+dotnet test
+```
+
 ### Test console app run
 ```
 cd Pathfinder.ConsoleApp
 dotnet restore
 dotnet run
-```
-
-### Test run
-```
-dotnet test
 ```
